@@ -15,11 +15,11 @@ C:/Users/alexl/OneDrive/Documents/Unity Projects/ChaosProject/Chaos/Chaos
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50018
+50548
 Successfully changed project path to: C:/Users/alexl/OneDrive/Documents/Unity Projects/ChaosProject/Chaos/Chaos
 C:/Users/alexl/OneDrive/Documents/Unity Projects/ChaosProject/Chaos/Chaos
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 82.61 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,248 +35,226 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002002 seconds.
+Registered in 0.002552 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 61.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 74.82 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.631 seconds
+- Completed reload, in  3.074 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001702 seconds.
+Registered in 0.004328 seconds.
 Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+
+Could not load signature of Unity.Android.Logcat.AndroidLogcatIPWindow:Show due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Could not load signature of Unity.Android.Logcat.AndroidLogcatConsoleWindow:GetAndroidDeviceFromCache due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Could not load signature of Unity.Android.Logcat.AndroidLogcatConsoleWindow:GetCachedAdb due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.71 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 74.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.249 seconds
+- Completed reload, in  1.455 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 109.7 MB.
-System memory in use after: 107.6 MB.
+Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.9 MB.
+System memory in use after: 128.9 MB.
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 2792.
-Total: 4.311400 ms (FindLiveObjects: 0.354800 ms CreateObjectMapping: 0.078800 ms MarkObjects: 2.311700 ms  DeleteObjects: 1.564200 ms)
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 3473.
+Total: 5.400300 ms (FindLiveObjects: 0.418600 ms CreateObjectMapping: 0.097800 ms MarkObjects: 3.385400 ms  DeleteObjects: 1.496400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts
-  artifactKey: Guid(cffe5317804f89042aa6d6e3309606de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(cffe5317804f89042aa6d6e3309606de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befcaf9a394c2b84585e76d89afd36b4') in 0.013074 seconds
-  Import took 0.017599 seconds .
+  path: Assets/Scenes/Game Scenes/Scene_Main 1.unity
+  artifactKey: Guid(82eedb64b5ecb024e84ab4f868c51445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Main 1.unity using Guid(82eedb64b5ecb024e84ab4f868c51445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c2a99f4b7a644d626dcd7eb6b0289d') in 0.031067 seconds
+  Import took 0.037259 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002547 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.166 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2649 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 118.0 MB.
-System memory in use after: 115.9 MB.
-
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3128.
-Total: 4.396000 ms (FindLiveObjects: 0.365000 ms CreateObjectMapping: 0.086000 ms MarkObjects: 2.437600 ms  DeleteObjects: 1.505900 ms)
+Received Import Request.
+  Time since last request: 4.731884 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_MainMenu.unity
+  artifactKey: Guid(82eedb64b5ecb024e84ab4f868c51445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_MainMenu.unity using Guid(82eedb64b5ecb024e84ab4f868c51445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb89454bb9df247c3721cd3d2392dc2') in 0.010879 seconds
+  Import took 0.016375 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002052 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2737 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.1 MB.
-System memory in use after: 118.9 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3218.
-Total: 4.588800 ms (FindLiveObjects: 0.387700 ms CreateObjectMapping: 0.090200 ms MarkObjects: 2.486900 ms  DeleteObjects: 1.622300 ms)
+Received Import Request.
+  Time since last request: 0.766202 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_MainMenu 1.unity
+  artifactKey: Guid(efaf3733636933e478c9ded0b287f5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_MainMenu 1.unity using Guid(efaf3733636933e478c9ded0b287f5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd919db31ae43f8892b2f260637fa6d') in 0.009519 seconds
+  Import took 0.015151 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003917 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.812 seconds
-Platform modules already initialized, skipping
-Script is not up to date after domain reload: guid(7f76fd784bcf4c840b2d7ae85313e706) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatStyles.cs") state(2)
-Script is not up to date after domain reload: guid(07708c8a4c32553418a7374aee2c6c70) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatPerformanceTests.cs") state(2)
-Script is not up to date after domain reload: guid(88a27da59c684824b871d5fb7d9718a6) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatBuildInfo.cs") state(2)
-Script is not up to date after domain reload: guid(3a860b43254b6944da33b350504c9265) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatMessageProvider.cs") state(2)
-Script is not up to date after domain reload: guid(fae640a08e7ea3e4cb8940a00df6cef8) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatInternalLog.cs") state(2)
-Script is not up to date after domain reload: guid(5ec623f4b314fe94ca210354d427ab69) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidTools/AndroidTools.cs") state(2)
-Script is not up to date after domain reload: guid(2ea8f2e7fb9fe654da4026f312b404b3) path("Packages/com.unity.mobile.android-logcat/Editor/Tasks/AndroidLogcatRetrieveConnectedDeviceIdsTask.cs") state(2)
-Script is not up to date after domain reload: guid(e821f28e88c783644ae24ff85c4eb63a) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatMessagesViews.cs") state(2)
-Script is not up to date after domain reload: guid(4bb35a836bd59884d8b180304edb0197) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatDevice.cs") state(2)
-Script is not up to date after domain reload: guid(bc2cf3374f61e094eb50fa7ae5298e87) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatDispatcherTests.cs") state(2)
-Script is not up to date after domain reload: guid(e5a387fa4927a2f47addedd0ebeabd4d) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidTools/Paths.cs") state(2)
-Script is not up to date after domain reload: guid(37990477a00393743b10b73c78f2de0c) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatMessageProviderTests.cs") state(2)
-Script is not up to date after domain reload: guid(6f037880ef9e96345ba18847c4de9d34) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatSettings.cs") state(2)
-Script is not up to date after domain reload: guid(3d066359ba7af76429311c569bad66ce) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatUtilities.cs") state(2)
-Script is not up to date after domain reload: guid(465d8328f407173468fe977fd758052e) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatManager.cs") state(2)
-Script is not up to date after domain reload: guid(79474c8e35baea24aacf73730dce1da3) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatRuntime.cs") state(2)
-Script is not up to date after domain reload: guid(8fb7ff11873a0274db93b2339dde159d) path("Packages/com.unity.mobile.android-logcat/Editor/Tasks/AndroidLogcatConnectToDeviceTask.cs") state(2)
-Script is not up to date after domain reload: guid(933bcfea4cf0d8149a11c15d53337fe8) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcat.cs") state(2)
-Script is not up to date after domain reload: guid(fb623b54e049ec1419ef67be65d224c4) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatIPWindow.cs") state(2)
-Script is not up to date after domain reload: guid(90f088391ed8b94478bdb63f0ad08a10) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatCallbacks.cs") state(2)
-Script is not up to date after domain reload: guid(e34e115f989d0f94ebc5ce200df3dae2) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatTagsControl.cs") state(2)
-Script is not up to date after domain reload: guid(24261791f242bdd49ae2af5d6bd366c2) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatGeneralTests.cs") state(2)
-Script is not up to date after domain reload: guid(4441015e304c5d948b0a02911ed4c6a7) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatStatusBar.cs") state(2)
-Script is not up to date after domain reload: guid(f25b341d9cdda0c47bd1dea7a5357434) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatNetTests.cs") state(2)
-Script is not up to date after domain reload: guid(f8985682bd344c843b04ebb5e6efb1a8) path("Packages/com.unity.mobile.android-logcat/Editor/Tasks/AndroidLogcatTaskResult.cs") state(2)
-Script is not up to date after domain reload: guid(6339cdba33f12de459d6b691dc57cb04) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatStacktraceWindow.cs") state(2)
-Script is not up to date after domain reload: guid(ee8b0cffe812df7499b537935b553dcc) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatScreenCaptureWindow.cs") state(2)
-Script is not up to date after domain reload: guid(ceb38965414d23845b6aedc518cafa14) path("Packages/com.unity.mobile.android-logcat/Editor/Tasks/AndroidLogcatDispatcher.cs") state(2)
-Script is not up to date after domain reload: guid(612d95cebe2f5d243a93f120c88326a2) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatTestRuntime.cs") state(2)
-Script is not up to date after domain reload: guid(3b42d901d0300064db1173dfd81f758e) path("Packages/com.unity.mobile.android-logcat/Editor/Tasks/AndroidLogcatTaskInput.cs") state(2)
-Script is not up to date after domain reload: guid(ac9b4e439aace6446a0642ca97e8f43b) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidLogcatConsoleWindow.cs") state(2)
-Script is not up to date after domain reload: guid(de0b55a5772e6a6489bdaa6912117d1a) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatRegexTests.cs") state(2)
-Script is not up to date after domain reload: guid(1df53c8c18905484784da58b52592637) path("Packages/com.unity.mobile.android-logcat/Tests/Runtime/AndroidLogcatDummyTests.cs") state(2)
-Script is not up to date after domain reload: guid(40418e3b62afa1e4d94ddc05a6aeb641) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatAddr2LineTests.cs") state(2)
-Script is not up to date after domain reload: guid(e6a96ebea6fbb7d44ac841a3c3a23a22) path("Packages/com.unity.mobile.android-logcat/Editor/AndroidTools/Shell.cs") state(2)
-Script is not up to date after domain reload: guid(14c8d64b0eab44c439af3d4a2a1ec307) path("Packages/com.unity.mobile.android-logcat/Tests/Editor/AndroidLogcatTestsSetup.cs") state(2)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2781 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 122.2 MB.
-System memory in use after: 120.0 MB.
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 3264.
-Total: 6.221400 ms (FindLiveObjects: 0.466000 ms CreateObjectMapping: 0.108500 ms MarkObjects: 3.945100 ms  DeleteObjects: 1.699700 ms)
+Received Import Request.
+  Time since last request: 6.286437 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_Game.unity
+  artifactKey: Guid(efaf3733636933e478c9ded0b287f5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Game.unity using Guid(efaf3733636933e478c9ded0b287f5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc150ed96c02a24a0dde454b6021e14') in 0.009195 seconds
+  Import took 0.014828 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.038150 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.182 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2817 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.7 MB.
-System memory in use after: 121.6 MB.
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 3303.
-Total: 4.706200 ms (FindLiveObjects: 0.378900 ms CreateObjectMapping: 0.103400 ms MarkObjects: 2.486400 ms  DeleteObjects: 1.735400 ms)
+Received Import Request.
+  Time since last request: 1.738061 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_Main.unity
+  artifactKey: Guid(d722e2be5b23f994787feff7c88a0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Main.unity using Guid(d722e2be5b23f994787feff7c88a0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd69e6de97792381b03600f8108991f') in 0.009641 seconds
+  Import took 0.016493 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003607 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invalid AssetDatabase path: /Editor/EditorResources/cm_logo_sm.png. Use path relative to the project folder.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:LoadAssetAtPath<UnityEngine.Texture2D> (string)
-Cinemachine.Editor.CinemachineSettings:get_CinemachineLogoTexture () (at Library/PackageCache/com.unity.cinemachine@2.6.3/Editor/Windows/CinemachineSettings.cs:205)
-Cinemachine.Editor.CinemachineSettings:.cctor () (at Library/PackageCache/com.unity.cinemachine@2.6.3/Editor/Windows/CinemachineSettings.cs:237)
-Cinemachine.CinemachineColliderPrefs:.cctor () (at Library/PackageCache/com.unity.cinemachine@2.6.3/Editor/Windows/CinemachineColliderPrefs.cs:61)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.cinemachine@2.6.3/Editor/Windows/CinemachineSettings.cs line 205]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.202 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2963 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.8 MB.
-System memory in use after: 126.6 MB.
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3451.
-Total: 4.533800 ms (FindLiveObjects: 0.398900 ms CreateObjectMapping: 0.095200 ms MarkObjects: 2.371300 ms  DeleteObjects: 1.666700 ms)
+Received Import Request.
+  Time since last request: 0.000679 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_Main.unity
+  artifactKey: Guid(d722e2be5b23f994787feff7c88a0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Main.unity using Guid(d722e2be5b23f994787feff7c88a0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd69e6de97792381b03600f8108991f') in 0.005476 seconds
+  Import took 0.012064 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003638 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.219 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3008 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.3 MB.
-System memory in use after: 128.1 MB.
+Received Import Request.
+  Time since last request: 53.328909 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_MainMenu.unity
+  artifactKey: Guid(82eedb64b5ecb024e84ab4f868c51445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_MainMenu.unity using Guid(82eedb64b5ecb024e84ab4f868c51445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80576d1b3d6bd4d05850caa467a34af5') in 0.004812 seconds
+  Import took 0.010644 seconds .
 
-Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 3486.
-Total: 5.258800 ms (FindLiveObjects: 0.392800 ms CreateObjectMapping: 0.103800 ms MarkObjects: 2.831200 ms  DeleteObjects: 1.929300 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 1.790903 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_MainMenu 1.unity
+  artifactKey: Guid(1d27fed361a4fd34f943917e77a6c919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_MainMenu 1.unity using Guid(1d27fed361a4fd34f943917e77a6c919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83446661c30c1143587bab7c2cb6d3e6') in 0.004485 seconds
+  Import took 0.010327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.218685 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_CharacterCreation.unity
+  artifactKey: Guid(1d27fed361a4fd34f943917e77a6c919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_CharacterCreation.unity using Guid(1d27fed361a4fd34f943917e77a6c919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709b6f135cedc79f5d2c9c80cec900dc') in 0.009869 seconds
+  Import took 0.015885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.768552 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_CharacterCreation 1.unity
+  artifactKey: Guid(149614d1073aae649a89e79327f1f6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_CharacterCreation 1.unity using Guid(149614d1073aae649a89e79327f1f6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e50fccdc138df0cccfba2eb3d6c7a9f') in 0.009651 seconds
+  Import took 0.015296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.116442 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_Game.unity
+  artifactKey: Guid(efaf3733636933e478c9ded0b287f5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Game.unity using Guid(efaf3733636933e478c9ded0b287f5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad4b77c5af6316bb8d4aa85731177fc') in 0.004970 seconds
+  Import took 0.010651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.762743 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_CharacterCustomization.unity
+  artifactKey: Guid(149614d1073aae649a89e79327f1f6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_CharacterCustomization.unity using Guid(149614d1073aae649a89e79327f1f6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41908ac89e0c9b771a5b4dcb49997365') in 0.009738 seconds
+  Import took 0.015510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.340049 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_CharacterCreation 1.unity
+  artifactKey: Guid(1bfb2e20a230d224db59ec921b2bac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_CharacterCreation 1.unity using Guid(1bfb2e20a230d224db59ec921b2bac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09900c99b195375646bf5083bf61fc82') in 0.009692 seconds
+  Import took 0.015274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.358782 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_Options.unity
+  artifactKey: Guid(1bfb2e20a230d224db59ec921b2bac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Options.unity using Guid(1bfb2e20a230d224db59ec921b2bac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662593d1bc58fa43f86912cee8be672d') in 0.010706 seconds
+  Import took 0.016365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.201052 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_Options 1.unity
+  artifactKey: Guid(f91feb44cd06a0147b38644dea4987b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_Options 1.unity using Guid(f91feb44cd06a0147b38644dea4987b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7f9de6fe19da1ac2aa48fbb3b7afe4') in 0.010492 seconds
+  Import took 0.016086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.485343 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_CurrencyShop.unity
+  artifactKey: Guid(f91feb44cd06a0147b38644dea4987b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_CurrencyShop.unity using Guid(f91feb44cd06a0147b38644dea4987b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1c30f711b92341e39554956435fb3b') in 0.011560 seconds
+  Import took 0.017143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.625819 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_CurrencyShop 1.unity
+  artifactKey: Guid(58584bd2645814b48856c086b2660659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_CurrencyShop 1.unity using Guid(58584bd2645814b48856c086b2660659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b447e45267938f14a08f3d0cf965a649') in 0.010377 seconds
+  Import took 0.016266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.490501 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_SceneWorldX.unity
+  artifactKey: Guid(58584bd2645814b48856c086b2660659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_SceneWorldX.unity using Guid(58584bd2645814b48856c086b2660659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad75e27b5b19c3debb00bd48bd75177') in 0.011777 seconds
+  Import took 0.017588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.618697 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_SceneWorldX 1.unity
+  artifactKey: Guid(ec9eab15218ee71499ed96b88049fad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_SceneWorldX 1.unity using Guid(ec9eab15218ee71499ed96b88049fad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4476b204c0ddfa6a46e6cb5ba2b04d72') in 0.010741 seconds
+  Import took 0.016483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.177791 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_SceneStageN.unity
+  artifactKey: Guid(ec9eab15218ee71499ed96b88049fad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_SceneStageN.unity using Guid(ec9eab15218ee71499ed96b88049fad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc599d3874cd261ef406e542870c5842') in 0.010162 seconds
+  Import took 0.015759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.778286 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_SceneWorldX 1.unity
+  artifactKey: Guid(177965d83f1d17449a89809a0c9b9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_SceneWorldX 1.unity using Guid(177965d83f1d17449a89809a0c9b9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d26654023674bbc56cb890cf8216e33') in 0.004910 seconds
+  Import took 0.010516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.163962 seconds.
+  path: Assets/Scenes/Game Scenes/Scene_.unity
+  artifactKey: Guid(177965d83f1d17449a89809a0c9b9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scenes/Scene_.unity using Guid(177965d83f1d17449a89809a0c9b9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e90dbd6ca66025d40cbcc1cc5ca7668') in 0.010406 seconds
+  Import took 0.016010 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
