@@ -1,4 +1,0 @@
-#Tue Jan 12 14:05:02 CET 2021
-base.0=C\:\\Users\\alexl\\OneDrive\\Documents\\Unity Projects\\ChaosProject\\Chaos\\Chaos\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\debug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
