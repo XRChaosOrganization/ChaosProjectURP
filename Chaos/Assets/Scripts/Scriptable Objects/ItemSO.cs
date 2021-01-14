@@ -50,6 +50,7 @@ public class ItemInstance
     }
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(ItemSO))]
 [CanEditMultipleObjects]
 public class ItemSOEditor : Editor 
@@ -101,3 +102,4 @@ public class ItemSOEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 }
+#endif
