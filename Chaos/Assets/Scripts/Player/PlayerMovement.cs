@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     #region Go or components
 
     private CharacterController2D cc;
-    private Joystick joystick;
+    [SerializeField] private Joystick joystick;
 
 
 
@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
 	#region Unity loop
     void Awake()
     {
-        joystick = FindObjectOfType<Joystick>();
         cc = GetComponent<CharacterController2D>();
     }
 
@@ -61,8 +60,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (joystick.Vertical >= Mathf.Cos(cc.jumpDetectAngle) || Input.GetAxisRaw("Vertical") >= Mathf.Cos(cc.jumpDetectAngle))
         {
-            Debug.Log("Jump Detected !");
             jump = true;
+            
         }
             
 

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 107
+  controlID: 105
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 108
+  controlID: 106
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 109
+  controlID: 107
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1230,22 +1230,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Physics/Material
+    - Assets/Data/Skills/Temp
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Physics/Material
+  - Assets/Data/Skills/Temp
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\GD Projects\Mobile AP Roguelike\ChaosProjectURP\Chaos
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6620000
-    m_LastClickedID: 25318
-    m_ExpandedIDs: 00000000b04a0000b24a0000c84c0000ca4c0000cc4c0000ce4c000000ca9a3b
+    scrollPos: {x: 0, y: 58}
+    m_SelectedIDs: 60530000
+    m_LastClickedID: 21344
+    m_ExpandedIDs: 00000000564b0000584b00005a4b00005c4b00005e4b0000604b0000904b0000964b0000a04b0000be4b00004053000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae4a0000b04a0000b24a0000b44a0000
+    m_ExpandedIDs: 00000000564b0000584b00005a4b00005c4b00005e4b0000604b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1394,9 +1394,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: feedffff
-      m_LastClickedID: -4610
-      m_ExpandedIDs: 2e4fffff66e6ffff1af8ffffecfaffff
+      m_SelectedIDs: b24a0000
+      m_LastClickedID: 19122
+      m_ExpandedIDs: e246ffffa068ffffcc68ffffe6b1ffffeeb4ffff3cd6ffff46d9ffff4afbffff984a0000b24a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1456,9 +1456,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.62964755, y: 4.577329, z: -1.6090603}
+    m_Target: {x: 1.2827097, y: 7.0356503, z: 8.263318}
     speed: 2
-    m_Value: {x: -0.62964755, y: 4.577329, z: -1.6090603}
+    m_Value: {x: 1.2827097, y: 7.0356503, z: 8.263318}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1509,9 +1509,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.6174836
+    m_Target: 17.455639
     speed: 2
-    m_Value: 5.6174836
+    m_Value: 17.455639
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1529,7 +1529,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.19055933, y: 0.07560044, z: -0.014720503, w: -0.9786537}
+  m_LastSceneViewRotation: {x: -0.1198767, y: 0.5925203, z: -0.089738384, w: -0.7915168}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1564,7 +1564,7 @@ MonoBehaviour:
   m_SerializedViewNames: []
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
+  m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 1920, y: 1080}
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_Stats: 0
   m_SelectedSizes: 00000000000000000000000006000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
