@@ -547,7 +547,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1561610834}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &670231123
 MonoBehaviour:
@@ -993,6 +993,7 @@ GameObject:
   - component: {fileID: 943229187}
   - component: {fileID: 943229186}
   - component: {fileID: 943229185}
+  - component: {fileID: 943229188}
   m_Layer: 3
   m_Name: Chest
   m_TagString: Interactable
@@ -1067,7 +1068,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1091,6 +1092,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943229188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943229184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32328f5da17f56f4c97ec649fabcd310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 943229186}
 --- !u!1 &959798718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,8 +1944,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 1551260285}
   interractDetectAngle: -0.33
-  interact: 0
-  hLock: 0
 --- !u!114 &1368007825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2193,8 +2205,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 670231122}
   - {fileID: 1631067039}
+  - {fileID: 670231122}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2263,7 +2275,7 @@ Transform:
   m_Children:
   - {fileID: 620846227}
   m_Father: {fileID: 1561610834}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1657550898
 GameObject:

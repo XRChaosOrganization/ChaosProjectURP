@@ -4,9 +4,6 @@ public class Interactable : MonoBehaviour
 {
 
     #region Go or components
-
-    [SerializeField] private BoxCollider2D trigger;
-
 	#endregion
 
 	#region Properties
@@ -20,7 +17,10 @@ public class Interactable : MonoBehaviour
 	
 	#region Methods
 
-    
+    public virtual void OnInteract()
+    {
+
+    }
 
 	#endregion
 }

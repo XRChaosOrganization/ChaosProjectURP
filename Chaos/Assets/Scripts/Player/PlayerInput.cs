@@ -25,8 +25,9 @@ public class PlayerInput : MonoBehaviour
     float hMove;
     bool jump;
     [SerializeField][Range(-0.5f, 0)] private float interractDetectAngle;
-    public bool interact;
-    public bool hLock = false;
+    private bool wasInteracting;
+    private bool interact;
+    private bool hLock = false;
     
 
 
@@ -77,6 +78,7 @@ public class PlayerInput : MonoBehaviour
 
     private void DetectInterract()
     {
+
         if (joystick.Vertical <= Mathf.Sin(interractDetectAngle * Mathf.PI))
         {
             interact = true;
@@ -86,6 +88,7 @@ public class PlayerInput : MonoBehaviour
         {
             interact = false;
             hLock = false;
+            wasInteracting = false;
         }
         
 
@@ -95,9 +98,10 @@ public class PlayerInput : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
 
-        if(other.tag == "Interactable" && interact == true)
+        if(other.tag == "Interactable" && interact == true && !wasInteracting)
         {
-            Debug.Log("Interacted !");
+            other.GetComponent<Interactable>().OnInteract();
+            wasInteracting = true;
             
         }
     }
