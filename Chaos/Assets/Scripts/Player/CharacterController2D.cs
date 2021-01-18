@@ -34,7 +34,7 @@ public class CharacterController2D : MonoBehaviour
     [Header("Controls")]
     [Space]
 
-    [Range(0, 90)] public int jumpDetectAngle = 30;
+    [Range(0, 0.5f)] public float jumpDetectAngle;
     [SerializeField] [Range(20, 60)] private float jumpForce;
 
     private Vector3 velocity = Vector3.zero;

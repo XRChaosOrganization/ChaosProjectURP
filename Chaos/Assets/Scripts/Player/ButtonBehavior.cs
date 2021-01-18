@@ -93,6 +93,7 @@ public class ButtonBehavior : MonoBehaviour
         linkedSkill.skill.UseSkill();
     }
 
+    #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         if(linkedSkill != null)
@@ -104,7 +105,7 @@ public class ButtonBehavior : MonoBehaviour
         
     }
 
-
+    #endif
 
 
 
