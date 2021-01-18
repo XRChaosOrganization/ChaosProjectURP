@@ -18,6 +18,8 @@ public class CharacterRPGComponent : MonoBehaviour
 
         //Apply our base items modifier to the character
         UpdateRPGStatsFromItems();
+
+        print(GetStat("Armor").statName);
     }
 
     private void InitCharacterStats()
@@ -51,9 +53,9 @@ public class CharacterRPGComponent : MonoBehaviour
                     Modifier baseMod = baseItems[i].itemBase.itemBase.baseMods[k]; 
                     ApplyModifierToStat(baseMod);
                 }
-                print("Applied : " + baseItems[i].itemBase.itemBase.baseMods.Count + " to : " + baseItems[i].item.itemName);
+                //print("Applied : " + baseItems[i].itemBase.itemBase.baseMods.Count + " to : " + baseItems[i].item.itemName);
             }
-            print("Processed item : " + baseItems[i].item.itemName);
+            //print("Processed item : " + baseItems[i].item.itemName);
         }
     }
 
@@ -119,5 +121,18 @@ public class CharacterRPGComponent : MonoBehaviour
     public List<StatInstance> GetStats ()
     {
         return statInstances; 
+    }
+
+    public StatInstance GetStat (string _statName)
+    {
+        StatInstance stat = null;
+        stat = statInstances.Find(x => x.statName == _statName);
+
+        if(stat == null)
+        {
+            Debug.LogWarning("Did no find stat : " + _statName);
+        }
+
+        return stat;
     }
 }

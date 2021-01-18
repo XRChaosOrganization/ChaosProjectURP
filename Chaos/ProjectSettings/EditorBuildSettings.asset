@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Dev Scenes/SceneDev_RPG.unity
-    guid: 4b58809327a73cc49862b40c3c12c9ae
+    path: Assets/Scenes/Game Scenes/Scene_CharacterCreation.unity
+    guid: 1d27fed361a4fd34f943917e77a6c919
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_Game.unity
+    guid: efaf3733636933e478c9ded0b287f5d8
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_Inventory.unity
+    guid: 149614d1073aae649a89e79327f1f6b2
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_Main.unity
+    guid: d722e2be5b23f994787feff7c88a0bb9
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_MainMenu.unity
+    guid: 82eedb64b5ecb024e84ab4f868c51445
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_MainMenuShop.unity
+    guid: f91feb44cd06a0147b38644dea4987b6
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_MemoryRewards.unity
+    guid: 7815e0d147069f1469ed9b16c0777258
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_NewRun.unity
+    guid: 3d9ed353f01e3a94dbb30ba4bde77ded
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_Options.unity
+    guid: 1bfb2e20a230d224db59ec921b2bac4c
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_QuestsAndRewards.unity
+    guid: 0eafa88975de21f49a7fcd0040c0e240
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_SceneStageN.unity
+    guid: ec9eab15218ee71499ed96b88049fad7
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Scene_SceneWorldX.unity
+    guid: 58584bd2645814b48856c086b2660659
   m_configObjects: {}

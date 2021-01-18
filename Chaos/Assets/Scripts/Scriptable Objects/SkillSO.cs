@@ -12,14 +12,17 @@ public class SkillSO : ScriptableObject
 [System.Serializable]
 public class Skill
 {
-    #region Properties
+    //Metadata (name desc, sprite)
+    //verb = damage / heal / damage overtime 
+    //Targetting 
+    //UI
 
+    #region Properties
     public string baseName;
     public Sprite baseIcon;
     public bool joystick;
     public float cooldown;
     public float targetingRadius;
-
 
     #endregion
 
@@ -41,4 +44,5 @@ public class Skill
     #endregion
 }
 
-
+//skillVerbSO
+//nom

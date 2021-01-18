@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Skill_Temp_Bow
   m_EditorClassIdentifier: 
   skill:
+    verb: {fileID: 11400000, guid: 0ebc7b6236d70d9418c7c89d09c06738, type: 2}
     baseName: Snipe
     baseIcon: {fileID: 0}
     joystick: 1
