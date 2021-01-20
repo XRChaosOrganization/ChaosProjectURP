@@ -2,8 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ButtonBehavior : MonoBehaviour
 {
+
+    #region Events
+
+    public delegate void Event();
+    public static Event ClearTargets;
+
+    #endregion
+
 
     #region Go or components
 
@@ -18,6 +27,7 @@ public class ButtonBehavior : MonoBehaviour
     #region properties
 
     [SerializeField][Range(1,3)] private int buttonId = 1;
+    [SerializeField] private LayerMask targetLayer;
 
     #endregion
 
@@ -25,11 +35,14 @@ public class ButtonBehavior : MonoBehaviour
     #endregion
 
     #region Variables
+    [SerializeField] private float circlecastRadius;
+    public Target lastTarget;
     #endregion
 
     #region Unity loop
     void Awake()
     {
+        player = FindObjectOfType<Player>();
         SkillLink();
 
     }
@@ -48,6 +61,7 @@ public class ButtonBehavior : MonoBehaviour
     void Update()
     {
         SkillLink();   // Temp
+        Autolock();
     }
     #endregion
 
@@ -98,17 +112,64 @@ public class ButtonBehavior : MonoBehaviour
         if(linkedSkill != null)
         {
             Vector3 direction = new Vector2(joystick.Horizontal, joystick.Vertical);
+
+            Debug.DrawRay(player.targetingOrigin.position, direction.normalized * linkedSkill.skill.targetingRadius, Color.green);
             Debug.DrawRay(player.targetingOrigin.position, direction * linkedSkill.skill.targetingRadius, Color.red);
+            
             UnityEditor.Handles.DrawWireDisc(player.targetingOrigin.position, player.targetingOrigin.forward, linkedSkill.skill.targetingRadius);
         }
         
     }
 
-    #endif
+#endif
+
+    private void Autolock()
+    {
+        if (linkedSkill != null)
+        {
+            Vector3 direction = new Vector2(joystick.Horizontal, joystick.Vertical);
+            RaycastHit2D hit = Physics2D.CircleCast(player.targetingOrigin.position, circlecastRadius, direction, linkedSkill.skill.targetingRadius, targetLayer);
+
+            if (hit)
+            {
+                Target target = hit.collider.gameObject.GetComponent<Target>();
+                Debug.Log(target);
+
+                if (target != lastTarget)
+                {
+                    
+                    if(ClearTargets != null)
+                        ClearTargets();
+                    lastTarget = target;
+                    target.TargetOn();
+
+                }
+            
+
+            }
+            else if (lastTarget != null)
+            {
+                lastTarget = null;
+                if (ClearTargets != null)
+                    ClearTargets();
+            }
+
+            
 
 
 
+        }
+    }
 
+    public void OnJoystickUp()
+    {
+        // Use skill on last target
+
+        lastTarget = null;
+
+        if (ClearTargets != null)
+            ClearTargets();
+    }
 
     #endregion
 }

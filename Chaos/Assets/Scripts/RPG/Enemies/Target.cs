@@ -18,12 +18,12 @@ public class Target : MonoBehaviour
 
     private void OnEnable()
     {
-        Targeting.ClearTargets += TargetOff;
+        ButtonBehavior.ClearTargets += TargetOff;
     }
 
     private void OnDisable()
     {
-        Targeting.ClearTargets -= TargetOff;
+        ButtonBehavior.ClearTargets -= TargetOff;
     }
 
     #endregion
@@ -60,6 +60,8 @@ public class Target : MonoBehaviour
     private void TargetOff()
     {
         target.gameObject.SetActive(false);
+        Debug.Log("cleared");
+
     }
 
     public void TargetOn()

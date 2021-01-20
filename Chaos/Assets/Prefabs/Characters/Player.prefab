@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 7588369913283510296}
   - component: {fileID: 7588369913283510279}
   - component: {fileID: 7588369913283510278}
-  - component: {fileID: 7588369913283510277}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -293,23 +292,6 @@ MonoBehaviour:
   skill1: {fileID: 11400000, guid: ce0d965536155d343baee89cf4b76a25, type: 2}
   skill2: {fileID: 11400000, guid: 772d52e551753cb45aec35cc8c0c20e2, type: 2}
   skill3: {fileID: 11400000, guid: 00dd5fc72f0e2e14697f0b6ccb7c6af3, type: 2}
---- !u!114 &7588369913283510277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7588369913283510301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 513cc8df5452b1d41b934d6d62bba927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 7588369913283510278}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  closestEnemy: {fileID: 0}
 --- !u!1 &7588369914309165083
 GameObject:
   m_ObjectHideFlags: 0
