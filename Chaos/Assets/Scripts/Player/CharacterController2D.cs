@@ -39,6 +39,7 @@ public class CharacterController2D : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
     
+    
     [SerializeField] [Range(4, 15)] private float moveSpeed;
     [SerializeField] [Range(0, .3f)]  private float movementSmoothing = .05f;
     
@@ -110,13 +111,14 @@ public class CharacterController2D : MonoBehaviour
             Flip();
         else if (move < 0 && facingRight)
             Flip();
-
+        
         if (isGrounded && jump)
         {
             isGrounded = false;
             rb.AddForce(new Vector2(0f, jumpForce * 10f));
         }
-
+        
+        
     }
 
     private void Flip()
