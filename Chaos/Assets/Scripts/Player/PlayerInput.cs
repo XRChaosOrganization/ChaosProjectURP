@@ -24,11 +24,13 @@ public class PlayerInput : MonoBehaviour
 
     float hMove;
     bool jump;
-    [SerializeField][Range(-0.5f, 0)] private float interractDetectAngle;
+    
     private bool wasInteracting;
     private bool interact;
     private bool hLock = false;
-    
+    public bool inputLock;
+
+    Vector3 joyDirection;
 
 
     #endregion
@@ -47,20 +49,30 @@ public class PlayerInput : MonoBehaviour
 
 	void FixedUpdate()
     {
-        cc.Move(hMove, jump);
-        jump = false;
+
+        if (!inputLock)
+        {
+            cc.Move(hMove, jump);
+            jump = false;
+        }
+        
     }
 	
     void Update()
     {
-        if (hLock)
-            hMove = 0;
-        else hMove = joystick.Horizontal;
+        if (!inputLock)
+        {
+            joyDirection = new Vector2(joystick.Horizontal, joystick.Vertical).normalized;
 
-        DetectJump();
-        DetectInterract();
+            if (hLock)
+                hMove = 0;
+            else hMove = joyDirection.x;
 
-        
+            DetectJump();
+            DetectInterract();
+            
+        }
+
     }
 	#endregion
 	
@@ -68,7 +80,8 @@ public class PlayerInput : MonoBehaviour
 
     private void DetectJump()
     {
-        if (joystick.Vertical >= Mathf.Sin(cc.jumpDetectAngle * Mathf.PI))
+
+        if (joyDirection.y >= Mathf.Sin(cc.jumpDetectAngle * Mathf.PI) && cc.isGrounded)
         {
             jump = true;
             
@@ -79,7 +92,7 @@ public class PlayerInput : MonoBehaviour
     private void DetectInterract()
     {
 
-        if (joystick.Vertical <= Mathf.Sin(interractDetectAngle * Mathf.PI))
+        if (joyDirection.y <= Mathf.Sin(cc.interractDetectAngle * Mathf.PI))
         {
             interact = true;
             hLock = true;

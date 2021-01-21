@@ -19,8 +19,8 @@ public class CharacterController2D : MonoBehaviour
 
     #region Properties
 
-    const float groundedRadius = .2f;
-    private bool isGrounded;
+    const float groundedRadius = .3f;
+    public bool isGrounded;
     private bool facingRight = true;
     [SerializeField] private LayerMask whatIsGround;
 
@@ -34,13 +34,17 @@ public class CharacterController2D : MonoBehaviour
     [Header("Controls")]
     [Space]
 
-    [Range(0, 0.5f)] public float jumpDetectAngle;
-    [SerializeField] [Range(20, 60)] private float jumpForce;
 
+    [Range(-0.5f, 0)] public float interractDetectAngle;
+    [Range(0, 0.5f)] public float jumpDetectAngle;
+    [SerializeField] [Range(0, 15)] private float jumpForce;
+    [SerializeField] [Range(0, 2)] private float jumpCD;
+    private bool jumpIsCD;
+    private float jumpTimer = 0;
     private Vector3 velocity = Vector3.zero;
     
     
-    [SerializeField] [Range(4, 15)] private float moveSpeed;
+    [SerializeField] [Range(0, 10)] private float moveSpeed;
     [SerializeField] [Range(0, .3f)]  private float movementSmoothing = .05f;
     
 
@@ -75,28 +79,22 @@ public class CharacterController2D : MonoBehaviour
 
     void FixedUpdate()
     {
-        bool wasGrounded = isGrounded;
-        isGrounded = false;
-
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundedRadius, whatIsGround);
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            if (colliders[i].gameObject != gameObject)
-            {
-                isGrounded = true;
-
-                if (!wasGrounded)               //ne sert a rien pour l'instant, c'est au cas où on veut que le controlleur fasse quelque chose quand le perso touche le sol
-                    OnLandEvent.Invoke();       //un effet de poussière a l'aterissage par exemple
-            }
-                
-        }
+        
 
     }
 
 	
     void Update()
     {
-        
+        GroundCheck();
+
+        if (jumpTimer > 0)
+            jumpTimer -= Time.deltaTime;
+        else
+        {
+            jumpTimer = 0;
+            jumpIsCD = false;
+        }
     }
     #endregion
 
@@ -104,7 +102,7 @@ public class CharacterController2D : MonoBehaviour
 
     public void Move(float move, bool jump)
     {
-        Vector3 targetVelocity = new Vector2(move * moveSpeed, rb.velocity.y);
+        Vector3 targetVelocity = new Vector2(move * moveSpeed * 100 * Time.deltaTime, rb.velocity.y);
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, movementSmoothing);
 
         if (move > 0 && !facingRight)
@@ -112,10 +110,12 @@ public class CharacterController2D : MonoBehaviour
         else if (move < 0 && facingRight)
             Flip();
         
-        if (isGrounded && jump)
+        if (isGrounded && jump && !jumpIsCD)
         {
+            jumpIsCD = true;
             isGrounded = false;
-            rb.AddForce(new Vector2(0f, jumpForce * 10f));
+            
+            rb.AddForce(new Vector2(0f, jumpForce * 100f));
         }
         
         
@@ -129,6 +129,29 @@ public class CharacterController2D : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    private void GroundCheck()
+    {
+        bool wasGrounded = isGrounded;
+        isGrounded = false;
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundedRadius, whatIsGround);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].gameObject != gameObject)
+            {
+                isGrounded = true;
+
+                if (!wasGrounded)
+                {
+                    jumpTimer = jumpCD;
+                    OnLandEvent.Invoke();
+                }              
+                      
+            }
+
+        }
     }
 
     #endregion

@@ -124,9 +124,9 @@ GameObject:
   - component: {fileID: 7588369913283510298}
   - component: {fileID: 7588369913283510300}
   - component: {fileID: 7588369913283510299}
-  - component: {fileID: 7588369913283510296}
   - component: {fileID: 7588369913283510279}
   - component: {fileID: 7588369913283510278}
+  - component: {fileID: 1292041293}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -215,12 +215,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7588369912732604705}
+  isGrounded: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  interractDetectAngle: -0.4
   jumpDetectAngle: 0.33
-  jumpForce: 30
-  moveSpeed: 10
+  jumpForce: 10
+  jumpCD: 0.3
+  moveSpeed: 5
   movementSmoothing: 0.05
   OnLandEvent:
     m_PersistentCalls:
@@ -246,22 +249,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &7588369913283510296
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7588369913283510301}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8cb28a1a99e74884ca8bf017abf1dc58, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!114 &7588369913283510279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  interractDetectAngle: -0.33
+  inputLock: 0
 --- !u!114 &7588369913283510278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +279,32 @@ MonoBehaviour:
   skill1: {fileID: 11400000, guid: ce0d965536155d343baee89cf4b76a25, type: 2}
   skill2: {fileID: 11400000, guid: 772d52e551753cb45aec35cc8c0c20e2, type: 2}
   skill3: {fileID: 11400000, guid: 00dd5fc72f0e2e14697f0b6ccb7c6af3, type: 2}
+--- !u!61 &1292041293
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7588369913283510301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 8cb28a1a99e74884ca8bf017abf1dc58, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &7588369914309165083
 GameObject:
   m_ObjectHideFlags: 0
