@@ -215,16 +215,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7588369912732604705}
-  isGrounded: 0
+  isGrounded: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  interractDetectAngle: -0.4
-  jumpDetectAngle: 0.33
-  jumpForce: 10
-  jumpCD: 0.3
+  interractDetectAngle: -0.435
+  jumpDetectAngle: 0.16
+  jumpForce: 11
+  jumpCD: 1
   moveSpeed: 5
-  movementSmoothing: 0.05
+  movementSmoothing: 0.013
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
