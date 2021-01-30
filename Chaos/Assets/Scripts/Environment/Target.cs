@@ -60,8 +60,6 @@ public class Target : MonoBehaviour
     private void TargetOff()
     {
         target.gameObject.SetActive(false);
-        Debug.Log("cleared");
-
     }
 
     public void TargetOn()

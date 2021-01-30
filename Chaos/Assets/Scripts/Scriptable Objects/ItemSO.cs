@@ -13,6 +13,9 @@ public class ItemSO : ScriptableObject
 [System.Serializable]
 public class ItemInstance 
 {
+    private ItemBase itemBase; 
+    public ItemBase GetBase () {return itemBase;}
+    
     public string itemName; 
     public Sprite itemSprite; 
     public bool isStackable = false; 

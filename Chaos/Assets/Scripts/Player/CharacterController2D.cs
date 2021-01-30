@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+//Alex : CharacterControllerComponent ? + c'est cool de le garder indépendant des inputs, je l'utiliserais probablement pour les NPC si il reste comment ça 
 public class CharacterController2D : MonoBehaviour
 {
 

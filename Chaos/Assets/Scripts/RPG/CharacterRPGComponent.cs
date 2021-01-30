@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class CharacterRPGComponent : MonoBehaviour
 {
+    public CharacterInventoryComponent inventory;
     public List<StatSO> baseStats; 
-    public List<ItemSO> baseItems; 
     [SerializeField] private List<StatInstance> statInstances; 
-    [SerializeField] private List<ItemInstance> itemInstances; 
 
-
-    void Start()
+    public void InitRPGComponent ()
     {
         //Inits
+        inventory.InitCharacterItems();
         InitCharacterStats();
-        InitCharacterItems();
-
-        //Apply our base items modifier to the character
         UpdateRPGStatsFromItems();
-
-        print(GetStat("Armor").statName);
     }
 
     private void InitCharacterStats()
@@ -30,32 +24,24 @@ public class CharacterRPGComponent : MonoBehaviour
         }
     }
 
-    private void InitCharacterItems ()
-    {
-        for (int i = 0; i < baseItems.Count; i++)
-        {
-            itemInstances.Add(new ItemInstance(baseItems[i]));
-        }
-    }
-
     //Go through all items & for each modifiers & base modifiers send them to our stats
     public void UpdateRPGStatsFromItems ()
     {
-        for (int i = 0; i < baseItems.Count; i++)
+        List<ItemInstance> items = inventory.GetItems();
+
+        for (int i = 0; i < items.Count; i++)
         {
-            for (int j = 0; j < baseItems[i].item.modifiers.Count; j++)
+            for (int j = 0; j < items[i].modifiers.Count; j++)
             {
-                Modifier mod = baseItems[i].item.modifiers[j]; 
+                Modifier mod = items[i].modifiers[j]; 
                 ApplyModifierToStat(mod);
 
-                for (int k = 0; k < baseItems[i].itemBase.itemBase.baseMods.Count; k++)
+                for (int k = 0; k < items[i].GetBase().baseMods.Count; k++)
                 {
-                    Modifier baseMod = baseItems[i].itemBase.itemBase.baseMods[k]; 
+                    Modifier baseMod = items[i].GetBase().baseMods[k]; 
                     ApplyModifierToStat(baseMod);
                 }
-                //print("Applied : " + baseItems[i].itemBase.itemBase.baseMods.Count + " to : " + baseItems[i].item.itemName);
             }
-            //print("Processed item : " + baseItems[i].item.itemName);
         }
     }
 
@@ -111,11 +97,6 @@ public class CharacterRPGComponent : MonoBehaviour
         {
             Debug.LogError("This modifier is trying to apply an incorrect/wrong mod to the value : " + _modifier.statSO.stat.statName);
         }
-    }
-
-    public List<ItemInstance> GetItems ()
-    {
-        return itemInstances; 
     }
 
     public List<StatInstance> GetStats ()

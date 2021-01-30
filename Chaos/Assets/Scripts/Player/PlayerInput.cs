@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Alex : PlayerInputComponent 
 public class PlayerInput : MonoBehaviour
 {
 
