@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ce3446c5b3a00c44bf268fab0b1a1b4, type: 3}
   m_Name: Item_SteelArmor
   m_EditorClassIdentifier: 
-  itemBase: {fileID: 11400000, guid: c774566730017ce439691c03f127e89f, type: 2}
   item:
+    itemBaseSO: {fileID: 11400000, guid: c774566730017ce439691c03f127e89f, type: 2}
     itemName: Steel Armor
-    itemSprite: {fileID: 0}
-    isStackable: 0
-    isConsumable: 0
     itemRarity: 0
-    modifiers: []
+    modifiers:
+    - statSO: {fileID: 11400000, guid: ecd8ba1ea35a32945a728301ac0fad8b, type: 2}
+      mode: 0
+      modeType: 0
+      modifierValue: 50

@@ -37,8 +37,6 @@ public class NPCBehaviorComponent : MonoBehaviour
 
         rpg = GetComponent<CharacterRPGComponent>();
         rpg.InitRPGComponent();
-        rpg.GetStat("Life").statBaseValue = npcBase.npcBase.baseLife;
-        rpg.GetStat("Life").statCurrentValue = npcBase.npcBase.baseLife;
 
         spriteRenderer.sprite = npcBase.npcBase.NPCSprite;
 

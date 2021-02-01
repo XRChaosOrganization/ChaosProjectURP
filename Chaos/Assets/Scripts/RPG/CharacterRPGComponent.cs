@@ -5,44 +5,59 @@ using UnityEngine;
 public class CharacterRPGComponent : MonoBehaviour
 {
     public CharacterInventoryComponent inventory;
-    public List<StatSO> baseStats; 
+    public StatGridSO statGrid; 
     [SerializeField] private List<StatInstance> statInstances; 
+    
+    [Header("Debug")]
+    public bool debugStatsFromItemUpdate = false; 
 
     public void InitRPGComponent ()
     {
         //Inits
-        inventory.InitCharacterItems();
         InitCharacterStats();
-        UpdateRPGStatsFromItems();
+        UpdateStatsFromItems();
     }
 
     private void InitCharacterStats()
     {
-        for (int i = 0; i < baseStats.Count; i++)
+        for (int i = 0; i < statGrid.baseStats.Count; i++)
         {
-            statInstances.Add(new StatInstance(baseStats[i].stat.statName, baseStats[i].stat.statBaseValue));
+            statInstances.Add(new StatInstance(statGrid.baseStats[i].statSO.stat.statName, statGrid.baseStats[i].baseValue));
         }
     }
 
     //Go through all items & for each modifiers & base modifiers send them to our stats
-    public void UpdateRPGStatsFromItems ()
+    public void UpdateStatsFromItems ()
     {
+        if(inventory == null) return; 
+        if(inventory.equippedItems.Count <= 0) return; 
+
+        inventory.UpdateEquippedItemInstances();
+
         List<ItemInstance> items = inventory.GetItems();
 
         for (int i = 0; i < items.Count; i++)
         {
+            //Add base mods stats 
+            for (int k = 0; k < items[i].itemBaseSO.itemBase.baseMods.Count; k++)
+            {
+                Modifier baseMod = items[i].itemBaseSO.itemBase.baseMods[k]; 
+                ApplyModifierToStat(baseMod);
+            }
+            //Add item mods stats 
             for (int j = 0; j < items[i].modifiers.Count; j++)
             {
                 Modifier mod = items[i].modifiers[j]; 
                 ApplyModifierToStat(mod);
-
-                for (int k = 0; k < items[i].GetBase().baseMods.Count; k++)
-                {
-                    Modifier baseMod = items[i].GetBase().baseMods[k]; 
-                    ApplyModifierToStat(baseMod);
-                }
+            }
+            if(debugStatsFromItemUpdate) 
+            {
+                print("Processed -> " + items[i].itemName + " <<<\n" + "it has    -> " + items[i].itemBaseSO.itemBase.baseMods.Count + " base mods / " + "and       -> " + items[i].modifiers.Count + " mods");
+                //print();
+                //print();
             }
         }
+
     }
 
     public void ApplyModifierToStat (Modifier _modifier)

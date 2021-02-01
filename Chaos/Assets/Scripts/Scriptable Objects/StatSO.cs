@@ -12,7 +12,6 @@ public class StatSO : ScriptableObject
 public class StatInstance 
 {
     public string statName; 
-    public float statBaseValue; 
 
     [SerializeField] private float currentValue;
     public float statCurrentValue
@@ -30,7 +29,6 @@ public class StatInstance
     {
         //Construct & Init our stat
         statName = _name;
-        statBaseValue = _baseValue;
-        statCurrentValue = statBaseValue;
+        statCurrentValue = _baseValue;
     }
 }

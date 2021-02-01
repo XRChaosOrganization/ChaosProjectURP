@@ -141,8 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 689471081164311728}
-  baseStats:
-  - {fileID: 11400000, guid: 2ed62aace6eb4a5408ba7eb366db1f83, type: 2}
+  statGrid: {fileID: 11400000, guid: f17499dbd5f196f4f838fa50f70d6fb5, type: 2}
   statInstances: []
 --- !u!114 &689471081164311728
 MonoBehaviour:

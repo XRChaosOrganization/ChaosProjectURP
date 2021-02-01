@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Skill_", menuName = "Data/RPG/Skill", order = 3)]
-
 public class SkillSO : ScriptableObject
 {
     public Skill skill;

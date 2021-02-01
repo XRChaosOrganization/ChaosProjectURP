@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: ItemBase_HeavyArmor
   m_EditorClassIdentifier: 
   itemBase:
+    itemSlot: 2
     baseName: Steel Armor
     baseIcon: {fileID: 0}
+    baseSprite: {fileID: 0}
     maximumNumberOfMods: 5
     baseMods:
     - statSO: {fileID: 11400000, guid: ecd8ba1ea35a32945a728301ac0fad8b, type: 2}
       mode: 0
       modeType: 1
       modifierValue: 20
+    isStackable: 0
+    isConsumable: 0

@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a822629721987ea49942230d3c745497, type: 3}
-  m_Name: ItemBase_Swords
+  m_Name: ItemBase_Axes
   m_EditorClassIdentifier: 
   itemBase:
-    baseName: Sword
+    itemSlot: 4
+    baseName: Axes
     baseIcon: {fileID: 0}
+    baseSprite: {fileID: 0}
     maximumNumberOfMods: 5
     baseMods:
     - statSO: {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
       mode: 0
       modeType: 0
       modifierValue: 10
+    isStackable: 0
+    isConsumable: 0

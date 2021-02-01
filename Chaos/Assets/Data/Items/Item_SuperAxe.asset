@@ -12,19 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ce3446c5b3a00c44bf268fab0b1a1b4, type: 3}
   m_Name: Item_SuperAxe
   m_EditorClassIdentifier: 
-  itemBase: {fileID: 11400000, guid: af2fead015ddb0d4fa2d42f7c81c6da8, type: 2}
   item:
+    itemBaseSO: {fileID: 11400000, guid: af2fead015ddb0d4fa2d42f7c81c6da8, type: 2}
     itemName: Super Axe
-    itemSprite: {fileID: 0}
-    isStackable: 0
-    isConsumable: 0
     itemRarity: 1
     modifiers:
     - statSO: {fileID: 11400000, guid: 2ed62aace6eb4a5408ba7eb366db1f83, type: 2}
       mode: 0
       modeType: 0
       modifierValue: 25
-    - statSO: {fileID: 11400000, guid: ecd8ba1ea35a32945a728301ac0fad8b, type: 2}
+    - statSO: {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
       mode: 0
-      modeType: 1
-      modifierValue: 15
+      modeType: 0
+      modifierValue: 10

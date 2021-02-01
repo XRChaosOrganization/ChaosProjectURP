@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: ItemBase_2HSwords
   m_EditorClassIdentifier: 
   itemBase:
+    itemSlot: 6
     baseName: 2 Handed Swords
     baseIcon: {fileID: 0}
+    baseSprite: {fileID: 0}
     maximumNumberOfMods: 5
     baseMods:
     - statSO: {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
       mode: 0
       modeType: 0
       modifierValue: 25
+    isStackable: 0
+    isConsumable: 0

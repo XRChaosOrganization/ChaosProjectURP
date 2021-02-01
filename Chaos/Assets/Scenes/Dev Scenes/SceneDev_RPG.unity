@@ -861,6 +861,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6366875459592682853, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: statGrid
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbfb14a54f9b144ab1dc3f656fabea6, type: 2}
+    - target: {fileID: 6366875459592682853, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 2052913964}
@@ -904,6 +908,10 @@ PrefabInstance:
       propertyPath: baseStats.Array.data[8]
       value: 
       objectReference: {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
+    - target: {fileID: 6366875459592682853, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: debugStatsFromItemUpdate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7588369913283510279, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
       propertyPath: joystick
       value: 
@@ -968,6 +976,26 @@ PrefabInstance:
       propertyPath: baseItems.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 0a9750b523f2e01428dc8bee8b7088de, type: 2}
+    - target: {fileID: 8273562790374266763, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: equippedItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273562790374266763, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: unequippedItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273562790374266763, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: equippedItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9f8153db6aad8bf489c8d1bf37d884cc, type: 2}
+    - target: {fileID: 8273562790374266763, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: equippedItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a9750b523f2e01428dc8bee8b7088de, type: 2}
+    - target: {fileID: 8273562790374266763, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
+      propertyPath: unequippedItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: da5439efd27965d4a82ba182b5e0f9dc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16ef0292de9db064f9289a580f50a7cf, type: 3}
 --- !u!1001 &1367429925
@@ -1170,18 +1198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
-  baseStats:
-  - {fileID: 11400000, guid: ecd8ba1ea35a32945a728301ac0fad8b, type: 2}
-  - {fileID: 11400000, guid: ac1bbe70f50bb244e8ba3e831b555215, type: 2}
-  - {fileID: 11400000, guid: aad7f16cdcebdca47a5040536b1dd590, type: 2}
-  - {fileID: 11400000, guid: 78cea6b67dc151940a31ebd14a763ee1, type: 2}
-  - {fileID: 11400000, guid: 2ed62aace6eb4a5408ba7eb366db1f83, type: 2}
-  - {fileID: 11400000, guid: 8001be5012acdb144ae1410810507fc8, type: 2}
-  - {fileID: 11400000, guid: 0438247e2f4881147951fc6cd74a2e58, type: 2}
-  - {fileID: 11400000, guid: d5c75425d3f72ef4ebbdff897f36c842, type: 2}
-  - {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
-  - {fileID: 11400000, guid: f60bc392af108ce4f9b21fda4ef73694, type: 2}
+  statGrid: {fileID: 0}
   statInstances: []
+  debugStatsFromItemUpdate: 0
 --- !u!1001 &2042775109
 PrefabInstance:
   m_ObjectHideFlags: 0

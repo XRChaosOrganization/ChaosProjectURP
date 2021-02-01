@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class CharacterInventoryComponent : MonoBehaviour
 {
-    public List<ItemSO> baseItems; 
-    [SerializeField] private List<ItemInstance> itemInstances; 
+    public List<ItemSO> unequippedItems; 
+    public List<ItemSO> equippedItems; 
+    
+    [SerializeField] private List<ItemInstance> itemInstances; //Only equipped items 
 
-    public void InitCharacterItems ()
+    public void UpdateEquippedItemInstances ()
     {
-        for (int i = 0; i < baseItems.Count; i++)
+        for (int i = 0; i < equippedItems.Count; i++)
         {
-            itemInstances.Add(new ItemInstance(baseItems[i]));
+            itemInstances.Add(new ItemInstance(equippedItems[i]));
         }
     }
 
