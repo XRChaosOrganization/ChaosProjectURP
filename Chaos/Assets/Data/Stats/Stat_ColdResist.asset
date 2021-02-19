@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8127aae0190a094f910cbbb961a5692, type: 3}
-  m_Name: Stat_PhysicalDamage
+  m_Name: Stat_ColdResist
   m_EditorClassIdentifier: 
   stat:
-    statName: PhysicalDamage
+    statName: ColdResist
     currentValue: 0

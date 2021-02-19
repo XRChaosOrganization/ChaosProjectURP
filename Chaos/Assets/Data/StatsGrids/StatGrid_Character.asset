@@ -14,18 +14,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
   - statSO: {fileID: 11400000, guid: 2ed62aace6eb4a5408ba7eb366db1f83, type: 2}
-    baseValue: 100
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 47090c6db67f92a42b79c6686344c494, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 9dd3bb41659b979419adddccd7ecf29f, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: a8c4c9bdca81b2c4682d53430f678902, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 0dce477592a2652458ab2c0d9e1f259a, type: 2}
+    baseValue: 0
   - statSO: {fileID: 11400000, guid: ecd8ba1ea35a32945a728301ac0fad8b, type: 2}
-    baseValue: 100
-  - statSO: {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
-    baseValue: 10
-  - statSO: {fileID: 11400000, guid: f60bc392af108ce4f9b21fda4ef73694, type: 2}
     baseValue: 0
   - statSO: {fileID: 11400000, guid: ac1bbe70f50bb244e8ba3e831b555215, type: 2}
-    baseValue: 1
-  - statSO: {fileID: 11400000, guid: 9fedb7d98843b0c4cb5c361cf6524081, type: 2}
     baseValue: 0
-  - statSO: {fileID: 11400000, guid: 57e511e9686cb944d8cff831ae8a8e86, type: 2}
-    baseValue: 10
-  - statSO: {fileID: 11400000, guid: f590bc9863e7d354daa3a28496b7a975, type: 2}
-    baseValue: 15
+  - statSO: {fileID: 11400000, guid: 0399d458a96f2794aa97ef8094417cbe, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 2306f966a9f35c540918098d4652785d, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 877b747761f5235449727c20e7c991cb, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: cbdcf19a6e509c847b000c27f542b1fb, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1468822a83697694685c4a80c1ebcff8, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 4a7c8f74bd7109140bac322136c658fc, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1237321e75e84324faf8f77f2e864e7f, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: ef24a70b22dba884fa01e5cf35757d8c, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 4db0278e7e3d7c74c9c625379822fc12, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 8732eeefb4c8e6246a3d319a5d069bc2, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1c3a4791e37fb5c43bc8c4dca9fbb66c, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 7dd31b52a71694d41a681c66bd892a46, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 73a74d5c6e3ef704d9add09357bfdf93, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 13807a9cd18460f4f8dc59d941b100c6, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 0e8a76d4e7bcbae4d84a6b373354ab9e, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 4ad6b17bcc73d684bbe2856b8d08bff3, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: c257e50238bcedb4fa6c9053447646d4, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: b4a439d370b674d48b1d1a8255cc7163, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 2ab22a47e06d38f479e4207256a0722a, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: d18788c0a9e3603439981a18e89dffe3, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: a9331536200aa084182f33b04fa1bfde, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: f462e9b57e212994887578c1a9803352, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 9cc1e433b961bba419ac18d92b2c662a, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 732b42c606ab5974f8275b9e03c55312, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1ede243f3a9f77f49aebe8f2c9148384, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 30a4004017e8860489f0a20ca799b935, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: db0ed03e7bf203c49937293e2fe85271, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 0c0763384e273c841bde2ff673ceb10e, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 9c3c419cb2dad7842923c56e98625f2b, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 0f872cb37b84bb94fb2166bc3e5a7242, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 8775b872d9ebefe4aaa814091adcd95c, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 20bed0a5e9767ce4e93621d55ed97205, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: b7f04b9af7c45144291b4a2009e548d1, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: f63eb745e32354443a03a3ff80afea5d, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 9a73065dcaaa52348b5b2124529565c1, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 9fed17f8eaf3b87489edaf9bbea7d9d5, type: 2}
+    baseValue: 0
