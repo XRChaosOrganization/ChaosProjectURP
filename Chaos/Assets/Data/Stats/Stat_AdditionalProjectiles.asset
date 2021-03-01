@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_AdditionalProjectiles
   m_EditorClassIdentifier: 
   stat:
-    statName: AdditionalProjectiles
-    currentValue: 0
+    statName: Additional Projectiles

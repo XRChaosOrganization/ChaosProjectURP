@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_StaggerDuration
   m_EditorClassIdentifier: 
   stat:
-    statName: StaggerDuration
-    currentValue: 0
+    statName: Stagger Duration

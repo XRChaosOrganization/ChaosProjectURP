@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_AdditionalRangeDamage
   m_EditorClassIdentifier: 
   stat:
-    statName: AdditionalRangeDamage
-    currentValue: 0
+    statName: Additional Range Damage

@@ -14,4 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stat:
     statName: Evasion
-    currentValue: 0

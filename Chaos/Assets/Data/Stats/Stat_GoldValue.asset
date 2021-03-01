@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_GoldValue
   m_EditorClassIdentifier: 
   stat:
-    statName: GoldValue
-    currentValue: 0
+    statName: Gold Value

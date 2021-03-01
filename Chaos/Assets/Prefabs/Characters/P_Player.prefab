@@ -309,9 +309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a7d98e83a149247893fc13de43d072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  baseStats: []
+  inventory: {fileID: 8273562790374266763}
+  statGrid: {fileID: 11400000, guid: 0b8473fb2931c734088bbcc114fb6b56, type: 2}
   statInstances: []
+  debugStatsFromItemUpdate: 0
 --- !u!114 &8273562790374266763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b27527c91aaa5f4482605acd3cda152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseItems: []
+  unequippedItems: []
+  equippedItems: []
   itemInstances: []
 --- !u!1 &7588369914309165083
 GameObject:

@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_AdditionalPassiveRange
   m_EditorClassIdentifier: 
   stat:
-    statName: AdditionalPassiveRange
-    currentValue: 0
+    statName: Additional Passive Range

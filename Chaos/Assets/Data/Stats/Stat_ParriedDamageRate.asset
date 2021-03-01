@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_ParriedDamageRate
   m_EditorClassIdentifier: 
   stat:
-    statName: ParriedDamageRate
-    currentValue: 0
+    statName: Parried  Damage Rate

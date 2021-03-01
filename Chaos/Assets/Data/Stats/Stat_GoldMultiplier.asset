@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_GoldMultiplier
   m_EditorClassIdentifier: 
   stat:
-    statName: GoldMultiplier
-    currentValue: 0
+    statName: Gold Multiplier

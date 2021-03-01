@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Data/RPG/Stat", order = 0)]
+[CreateAssetMenu(fileName = "Stat_", menuName = "Data/RPG/Stat", order = 0)]
 public class StatSO : ScriptableObject
 {
     public StatInstance stat; 
@@ -13,7 +13,7 @@ public class StatInstance
 {
     public string statName; 
 
-    [SerializeField] private float currentValue;
+    private float currentValue;
     public float statCurrentValue
     {
         get { return currentValue; }

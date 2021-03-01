@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6951c6337634ca647b3b9b4be6c1fe76, type: 3}
+  m_Name: StatGrid_Player
+  m_EditorClassIdentifier: 
+  baseStats:
+  - statSO: {fileID: 11400000, guid: 0c0763384e273c841bde2ff673ceb10e, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 9c3c419cb2dad7842923c56e98625f2b, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: b7f04b9af7c45144291b4a2009e548d1, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 30a4004017e8860489f0a20ca799b935, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: d7a6241f542c9d24fbbd04aa89d19f66, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: f4a179dd9c1ccfc428965800640d4798, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 624fb0c6be334de418ab282db057d901, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 3ac783923a67cde4182397413643311e, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 92f1285e98f65304484bccc4691b586b, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1e2fbd48f11875b4595d069cbbfab743, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: a8a483ed69bae6d41befac8a1fe39fa3, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: dca08c2fc63723e4fb5e145326c90d5a, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 219730a3f26d356459a3345244f7ca5e, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: b01221aa0525b0548ae1b2878dc602dc, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: eb778804a494b444dac10f7e2c193d60, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 076f898a12cedfc4d870a1379489f4c6, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1ad5ceecdd7547747973d192752d86da, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: edc4736042ee8e3478baf852c99527e0, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 6169e3c88118f24498ac6c8657356443, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 434d482ecfa604842991e2bd8f8f294a, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: cb00a096e89b00a47a9538d0348b6489, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: ca56725b72dc0cb42814b4ab42fdb7f0, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 304230cffc797ce4db761bfb42d827b9, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: bfa999113054fff438d0930268870bd0, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 8036d6fcca970ea4abb0feaeeb04a309, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 6bdd23949dc037a41a2669f20e37f501, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1def43e9c4f19644694edf772ad5bd1a, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: ca6d572470fa07b4995b0a765dd2781d, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 71e66ffbf2751214c9e620fd07fe8c4f, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 7ef87e81a1c1859439df3ff783f3ad16, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: f499121095dffb1438e8545bd8335a41, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 8ebf7afc7ec98e54eb372dd17e54e472, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1e40e7503cbf19b44897dcfcc6a28183, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: c931ec9386f06ec44b95d4eb9a829b67, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: bd365a948e78b304f86406710c23c3db, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 6728e9bd48bec8144946e022cdf6d2cd, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: c00d3db743abed24ba9d97e733e1a3d7, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: b9841b3f8e8923546be8cb9042664cb8, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: fa4ae6b7c4501cb4faef15cb155afa28, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 07632807458767c4eb96a7950463ce14, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 2a472794a1345054d90b299845e88f44, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 1bd4e94390f758145a9c5b32e2962a90, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: d37153a7af24b7d44853879190fe7def, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: fa22f50f3fb3d2b4ab098a08df55b8b3, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: 94bc87aef79db434480fcc4cb79eb820, type: 2}
+    baseValue: 0
+  - statSO: {fileID: 11400000, guid: a8c4c9bdca81b2c4682d53430f678902, type: 2}
+    baseValue: 0

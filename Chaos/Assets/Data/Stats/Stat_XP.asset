@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_XP
   m_EditorClassIdentifier: 
   stat:
-    statName: Power Resistance
-    currentValue: 0
+    statName: XP

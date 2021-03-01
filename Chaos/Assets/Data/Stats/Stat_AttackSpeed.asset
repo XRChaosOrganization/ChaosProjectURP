@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_AttackSpeed
   m_EditorClassIdentifier: 
   stat:
-    statName: AttackSpeed
-    currentValue: 0
+    statName: Attack Speed

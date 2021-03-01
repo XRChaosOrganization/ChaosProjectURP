@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Stat_AdditionalPassiveDuration
   m_EditorClassIdentifier: 
   stat:
-    statName: AdditionalPassiveDuration
-    currentValue: 0
+    statName: Additional Passive Duration
