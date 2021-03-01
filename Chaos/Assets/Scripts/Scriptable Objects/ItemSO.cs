@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Data/RPG/Item", order = 1)]
+[CreateAssetMenu(fileName = "Item_", menuName = "Data/RPG/Item", order = 1)]
 public class ItemSO : ScriptableObject
 {
     public ItemInstance item; 
@@ -12,7 +12,7 @@ public class ItemSO : ScriptableObject
 [System.Serializable]
 public class ItemInstance 
 {
-    public enum ItemRarity {COMMON, RARE, EPIC, LEGENDARY}; 
+    public enum ItemRarity {COMMON = 1, RARE = 2, EPIC = 3, LEGENDARY = 4}; 
     
     public ItemBaseSO itemBaseSO; 
     [Space]
@@ -21,12 +21,42 @@ public class ItemInstance
     [Space]
     public List<Modifier> modifiers; 
 
+    //Use this in rpg component to instantiate itemsSO into ItemInstances
     public ItemInstance (ItemSO _itemSO)
     {
         itemBaseSO = _itemSO.item.itemBaseSO;
         itemName = _itemSO.item.itemName; 
         itemRarity = _itemSO.item.itemRarity; 
         modifiers = _itemSO.item.modifiers; 
+    }
+
+    //Use this in Generation 
+    public ItemInstance (ItemBaseSO _baseSO)
+    {
+        //Assigne base
+        itemBaseSO = _baseSO;
+
+        //Choose rarity
+        int rar = Random.Range(0, 4);
+
+        if(rar == 0)
+            itemRarity = ItemRarity.COMMON;
+
+        else if (rar == 1)
+            itemRarity = ItemRarity.RARE;
+
+        else if (rar == 2)
+            itemRarity = ItemRarity.EPIC;
+
+        else if (rar == 3)
+            itemRarity = ItemRarity.LEGENDARY;
+
+
+        //Choose name 
+        itemName = "Random Name";
+
+        //Populate modifiers from modifier's grid in base item
+        modifiers = itemBaseSO.itemBase.modifiersGrid.GetRandomMods(itemRarity, 1, 1, 1, 1);
     }
 }
 

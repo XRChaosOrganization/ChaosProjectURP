@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ce4a053b142ef489708a6b7f415bd3, type: 3}
+  m_Name: ItemModGrid_OneHandedSwordPhysical
+  m_EditorClassIdentifier: 
+  baseMods:
+  - statSO: {fileID: 11400000, guid: 7862f0de2050fd2428f0187c8ea9d490, type: 2}
+    mode: 0
+    modeType: 0
+    modRangeValue: {x: 5, y: 10}
+  commonMods:
+  - statSO: {fileID: 11400000, guid: 7862f0de2050fd2428f0187c8ea9d490, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 8}
+  - statSO: {fileID: 11400000, guid: eb778804a494b444dac10f7e2c193d60, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 1, y: 5}
+  - statSO: {fileID: 11400000, guid: 076f898a12cedfc4d870a1379489f4c6, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}
+  rareMods:
+  - statSO: {fileID: 11400000, guid: eb778804a494b444dac10f7e2c193d60, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 15}
+  - statSO: {fileID: 11400000, guid: 9ce725e1b0604eb4bbd540d185a75a6a, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}
+  - statSO: {fileID: 11400000, guid: fb0b83dc6734bdc40a0e60942a7e26b4, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 15}
+  epicMods:
+  - statSO: {fileID: 11400000, guid: a8a483ed69bae6d41befac8a1fe39fa3, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 5}
+  - statSO: {fileID: 11400000, guid: cb00a096e89b00a47a9538d0348b6489, type: 2}
+    mode: 0
+    modeType: 0
+    modRangeValue: {x: 10, y: 20}
+  - statSO: {fileID: 11400000, guid: 0a9a1103a6ab12b459ec81e99407c1a9, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 5}
+  - statSO: {fileID: 11400000, guid: abc837f92b208214ab0750ba2e7a4995, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 1, y: 3}
+  - statSO: {fileID: 11400000, guid: d7a6241f542c9d24fbbd04aa89d19f66, type: 2}
+    mode: 0
+    modeType: 0
+    modRangeValue: {x: 10, y: 20}
+  legendaryMods:
+  - statSO: {fileID: 11400000, guid: 7862f0de2050fd2428f0187c8ea9d490, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}
+  - statSO: {fileID: 11400000, guid: eb778804a494b444dac10f7e2c193d60, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}
+  - statSO: {fileID: 11400000, guid: 9ce725e1b0604eb4bbd540d185a75a6a, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}
+  - statSO: {fileID: 11400000, guid: abc837f92b208214ab0750ba2e7a4995, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 3, y: 6}
+  - statSO: {fileID: 11400000, guid: b385f502a312fcd48bee61acae4a71c9, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}

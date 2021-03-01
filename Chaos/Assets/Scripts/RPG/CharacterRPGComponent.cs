@@ -39,9 +39,9 @@ public class CharacterRPGComponent : MonoBehaviour
         for (int i = 0; i < items.Count; i++)
         {
             //Add base mods stats 
-            for (int k = 0; k < items[i].itemBaseSO.itemBase.baseMods.Count; k++)
+            for (int k = 0; k < items[i].itemBaseSO.itemBase.modifiersGrid.baseMods.Count; k++)
             {
-                Modifier baseMod = items[i].itemBaseSO.itemBase.baseMods[k]; 
+                Modifier baseMod = items[i].itemBaseSO.itemBase.modifiersGrid.baseMods[k]; 
                 ApplyModifierToStat(baseMod);
             }
             //Add item mods stats 
@@ -52,7 +52,7 @@ public class CharacterRPGComponent : MonoBehaviour
             }
             if(debugStatsFromItemUpdate) 
             {
-                print("Processed -> " + items[i].itemName + " <<<\n" + "it has    -> " + items[i].itemBaseSO.itemBase.baseMods.Count + " base mods / " + "and       -> " + items[i].modifiers.Count + " mods");
+                print("Processed -> " + items[i].itemName + " <<<\n" + "it has    -> " + items[i].itemBaseSO.itemBase.modifiersGrid.baseMods.Count + " base mods / " + "and       -> " + items[i].modifiers.Count + " mods");
                 //print();
                 //print();
             }
@@ -83,30 +83,30 @@ public class CharacterRPGComponent : MonoBehaviour
         if(_modifier.mode == Modifier.Mode.ADD)
         {
             if(_modifier.modeType == Modifier.ModeType.FLAT)
-                statToModify.statCurrentValue += _modifier.modifierValue;
+                statToModify.statCurrentValue += _modifier.ModifierValue;
             else if(_modifier.modeType == Modifier.ModeType.PERCENT)
-                statToModify.statCurrentValue += (_modifier.modifierValue / 100) * statToModify.statCurrentValue;
+                statToModify.statCurrentValue += (_modifier.ModifierValue / 100) * statToModify.statCurrentValue;
         }
         else if(_modifier.mode == Modifier.Mode.DIVIDE)
         {
             if(_modifier.modeType == Modifier.ModeType.FLAT)
-                statToModify.statCurrentValue /= _modifier.modifierValue;
+                statToModify.statCurrentValue /= _modifier.ModifierValue;
             else if(_modifier.modeType == Modifier.ModeType.PERCENT)
-                statToModify.statCurrentValue /= (_modifier.modifierValue / 100) * statToModify.statCurrentValue;
+                statToModify.statCurrentValue /= (_modifier.ModifierValue / 100) * statToModify.statCurrentValue;
         }
         else if(_modifier.mode == Modifier.Mode.DIVIDE)
         {
             if(_modifier.modeType == Modifier.ModeType.FLAT)
-                statToModify.statCurrentValue -= _modifier.modifierValue;
+                statToModify.statCurrentValue -= _modifier.ModifierValue;
             else if(_modifier.modeType == Modifier.ModeType.PERCENT)
-                statToModify.statCurrentValue -= (_modifier.modifierValue / 100) * statToModify.statCurrentValue;
+                statToModify.statCurrentValue -= (_modifier.ModifierValue / 100) * statToModify.statCurrentValue;
         }
         else if(_modifier.mode == Modifier.Mode.DIVIDE)
         {
             if(_modifier.modeType == Modifier.ModeType.FLAT)
-                statToModify.statCurrentValue *= _modifier.modifierValue;
+                statToModify.statCurrentValue *= _modifier.ModifierValue;
             else if(_modifier.modeType == Modifier.ModeType.PERCENT)
-                statToModify.statCurrentValue *= (_modifier.modifierValue / 100) * statToModify.statCurrentValue;
+                statToModify.statCurrentValue *= (_modifier.ModifierValue / 100) * statToModify.statCurrentValue;
         }
         else
         {

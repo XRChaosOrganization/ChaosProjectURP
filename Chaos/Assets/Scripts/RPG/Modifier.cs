@@ -10,5 +10,17 @@ public class Modifier
     public Mode mode;
     public enum ModeType {FLAT, PERCENT};
     public ModeType modeType;
-    public float modifierValue; 
+    public Vector2 modRangeValue; 
+    private float modifierValue = 0.0f; 
+
+    public float ModifierValue 
+    {
+        get
+        {
+            if(modifierValue == 0.0f)
+                modifierValue = Random.Range(modRangeValue.x, modRangeValue.y);
+            
+            return modifierValue;
+        }
+    }
 } 

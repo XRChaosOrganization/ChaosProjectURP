@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ce3446c5b3a00c44bf268fab0b1a1b4, type: 3}
-  m_Name: Item_FabricArmor
+  m_Name: Item_SwordOfTheBeginner
   m_EditorClassIdentifier: 
   item:
-    itemBaseSO: {fileID: 11400000, guid: c7b001d2efc62ee4d8b70aecc011e535, type: 2}
-    itemName: Weak fabric armor
+    itemBaseSO: {fileID: 11400000, guid: 570163a6be7d07f44894aad60841e145, type: 2}
+    itemName: 
     itemRarity: 0
     modifiers:
-    - statSO: {fileID: 11400000, guid: ecd8ba1ea35a32945a728301ac0fad8b, type: 2}
+    - statSO: {fileID: 11400000, guid: eb778804a494b444dac10f7e2c193d60, type: 2}
       mode: 0
-      modeType: 0
-      modifierValue: 10
+      modeType: 1
+      modRangeValue: {x: 5, y: 5}
