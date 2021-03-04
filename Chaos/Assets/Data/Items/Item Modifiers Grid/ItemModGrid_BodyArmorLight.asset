@@ -22,7 +22,7 @@ MonoBehaviour:
     mode: 0
     modeType: 1
     modRangeValue: {x: 5, y: 10}
-  - statSO: {fileID: 11400000, guid: 05af0d5d1a6622d469e3ffa3b6d61b3c, type: 2}
+  - statSO: {fileID: 11400000, guid: 8ebf7afc7ec98e54eb372dd17e54e472, type: 2}
     mode: 0
     modeType: 1
     modRangeValue: {x: 5, y: 10}
@@ -30,16 +30,16 @@ MonoBehaviour:
     mode: 0
     modeType: 1
     modRangeValue: {x: 1, y: 5}
-  - statSO: {fileID: 11400000, guid: 02ee6143b3d9c2b4e81909fcde117d7e, type: 2}
+  - statSO: {fileID: 11400000, guid: 1def43e9c4f19644694edf772ad5bd1a, type: 2}
     mode: 0
     modeType: 0
     modRangeValue: {x: 25, y: 50}
   rareMods:
-  - statSO: {fileID: 11400000, guid: 02ee6143b3d9c2b4e81909fcde117d7e, type: 2}
+  - statSO: {fileID: 11400000, guid: 1def43e9c4f19644694edf772ad5bd1a, type: 2}
     mode: 0
     modeType: 0
     modRangeValue: {x: 75, y: 100}
-  - statSO: {fileID: 11400000, guid: 537406b78e2673f4183e6b659e601d46, type: 2}
+  - statSO: {fileID: 11400000, guid: 8ebf7afc7ec98e54eb372dd17e54e472, type: 2}
     mode: 0
     modeType: 0
     modRangeValue: {x: 50, y: 75}
@@ -51,12 +51,12 @@ MonoBehaviour:
     mode: 0
     modeType: 1
     modRangeValue: {x: 5, y: 10}
-  - statSO: {fileID: 11400000, guid: 05af0d5d1a6622d469e3ffa3b6d61b3c, type: 2}
+  - statSO: {fileID: 11400000, guid: 07632807458767c4eb96a7950463ce14, type: 2}
     mode: 0
     modeType: 0
     modRangeValue: {x: 10, y: 15}
   epicMods:
-  - statSO: {fileID: 11400000, guid: abc837f92b208214ab0750ba2e7a4995, type: 2}
+  - statSO: {fileID: 11400000, guid: eb778804a494b444dac10f7e2c193d60, type: 2}
     mode: 0
     modeType: 0
     modRangeValue: {x: 3, y: 5}
@@ -69,11 +69,11 @@ MonoBehaviour:
     modeType: 0
     modRangeValue: {x: 80, y: 120}
   legendaryMods:
-  - statSO: {fileID: 11400000, guid: abc837f92b208214ab0750ba2e7a4995, type: 2}
+  - statSO: {fileID: 11400000, guid: 076f898a12cedfc4d870a1379489f4c6, type: 2}
     mode: 0
     modeType: 1
-    modRangeValue: {x: 3, y: 6}
-  - statSO: {fileID: 11400000, guid: b385f502a312fcd48bee61acae4a71c9, type: 2}
+    modRangeValue: {x: 10, y: 15}
+  - statSO: {fileID: 11400000, guid: cb00a096e89b00a47a9538d0348b6489, type: 2}
     mode: 0
     modeType: 1
     modRangeValue: {x: 5, y: 10}
