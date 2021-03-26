@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6849817749397117935}
-  - component: {fileID: 6849817749397117934}
+  - component: {fileID: 841385824}
   m_Layer: 5
   m_Name: Action Button 3
   m_TagString: Untagged
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6849817749397117934
+--- !u!114 &841385824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50,11 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952e7e6a459f3774a9f9dfe382b0a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  joystick: {fileID: 8622629244859960012}
-  button: {fileID: 6849817749429073830}
-  linkedSkill: {fileID: 0}
-  buttonId: 3
+  joystick: {fileID: 0}
+  button: {fileID: 0}
   targetLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -536,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6849817750847963587}
-  - component: {fileID: 6849817750847963586}
+  - component: {fileID: 1051260937}
   m_Layer: 5
   m_Name: Action Button 1
   m_TagString: Untagged
@@ -565,7 +562,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6849817750847963586
+--- !u!114 &1051260937
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -577,15 +574,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952e7e6a459f3774a9f9dfe382b0a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  joystick: {fileID: 8622629245539640123}
-  button: {fileID: 6849817751359907398}
-  linkedSkill: {fileID: 0}
-  buttonId: 1
+  joystick: {fileID: 0}
+  button: {fileID: 0}
   targetLayer:
     serializedVersion: 2
-    m_Bits: 8
-  circlecastRadius: 0.2
+    m_Bits: 0
+  circlecastRadius: 0
   lastTarget: {fileID: 0}
 --- !u!1 &6849817751125959675
 GameObject:
@@ -796,7 +790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6849817751428133747}
-  - component: {fileID: 6849817751428133746}
+  - component: {fileID: 1289286368}
   m_Layer: 5
   m_Name: Action Button 2
   m_TagString: Untagged
@@ -825,7 +819,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6849817751428133746
+--- !u!114 &1289286368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -837,11 +831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952e7e6a459f3774a9f9dfe382b0a814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  joystick: {fileID: 8622629246172376329}
-  button: {fileID: 6849817749621536118}
-  linkedSkill: {fileID: 0}
-  buttonId: 2
+  joystick: {fileID: 0}
+  button: {fileID: 0}
   targetLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -884,18 +875,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6849817751089086209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8622629245539640119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9129c0ab82ea7bf42b423b9ba314430f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6849817749437066787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1164,17 +1143,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   m_PrefabInstance: {fileID: 6849817749663644467}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8622629244859960012 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-  m_PrefabInstance: {fileID: 6849817749663644467}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6849817750375813828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1316,22 +1284,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
---- !u!1 &8622629245539640119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-  m_PrefabInstance: {fileID: 6849817750375813828}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8622629245539640123 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-  m_PrefabInstance: {fileID: 6849817750375813828}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8622629245539640119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &8622629245539640118 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
@@ -1474,17 +1426,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
---- !u!114 &8622629246172376329 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-  m_PrefabInstance: {fileID: 6849817750972898550}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &8622629246172376324 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}

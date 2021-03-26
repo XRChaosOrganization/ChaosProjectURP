@@ -3,55 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JoystickButtonComponent : MonoBehaviour, IPointerUpHandler
+public class SkillButtonComponent : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
+    private SkillInputComponent skillInput;
+    public bool isJoystick = false; 
 
-    #region Go or components
-
-    private ButtonBehavior buttonBehavior;
-
-    #endregion
-
-    #region Properties
-    #endregion
-
-    #region Inputs
-    #endregion
-
-    #region Variables
-	#endregion
-
-	#region Unity loop
     void Awake()
     {
-        buttonBehavior = GetComponentInParent<ButtonBehavior>();
+        skillInput = GetComponentInParent<SkillInputComponent>();
+        if(GetComponent<FixedJoystick>() != null)
+        {
+            isJoystick = true; 
+        }
     }
-
-    void Start()
-    {
-        
-    }
-
-
-	void FixedUpdate()
-    {
-        
-    }
-	
-    void Update()
-    {
-        
-    }
-
-
-    #endregion
-
-    #region Methods
-
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        buttonBehavior.OnJoystickUp();
+        if (isJoystick == false) return; 
+        skillInput.OnInputUp();
 
         //Collider2D[] enemyInRange = enemyInRange = Physics2D.OverlapCircleAll(player.targetingOrigin.position, player.skill1.skill.targetingRadius, targetLayer);
 
@@ -86,5 +55,9 @@ public class JoystickButtonComponent : MonoBehaviour, IPointerUpHandler
         //}       
     }
 
-    #endregion
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (isJoystick == true) return; 
+        skillInput.OnInputDown();
+    }
 }

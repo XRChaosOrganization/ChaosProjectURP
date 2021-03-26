@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842af242a6e9c914fa9ca8c779129fed, type: 3}
-  m_Name: Skill_Temp_ChocFlammes
+  m_Script: {fileID: 11500000, guid: 52af9f01248547e4398f8d76da37761d, type: 3}
+  m_Name: Source_Heal
   m_EditorClassIdentifier: 
-  skill:
-    baseName: Choc de flammes
-    baseIcon: {fileID: 0}
-    joystick: 0
-    cooldown: 0
-    targetingRadius: 0
+  name: 
+  statToInfluence:
+    statSO: {fileID: 11400000, guid: f499121095dffb1438e8545bd8335a41, type: 2}
+    mode: 0
+    modeType: 1
+    modRangeValue: {x: 5, y: 10}

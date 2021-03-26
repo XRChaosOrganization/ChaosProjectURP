@@ -7,11 +7,6 @@ public class Player : MonoBehaviour
 {
     public Transform targetingOrigin;
 
-    [Header("Skills")] //Skill component ? 
-    public SkillSO skill1;
-    public SkillSO skill2;
-    public SkillSO skill3;
-
     private void Start() 
     {
         GetComponent<CharacterRPGComponent>().InitRPGComponent();

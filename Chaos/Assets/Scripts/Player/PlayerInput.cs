@@ -114,7 +114,7 @@ public class PlayerInput : MonoBehaviour
 
         if(other.tag == "Interactable" && interact == true && !wasInteracting)
         {
-            other.GetComponent<Interactable>().OnInteract();
+            other.GetComponent<InteractableComponent>().OnInteract();
             wasInteracting = true;
             
         }

@@ -10,10 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 842af242a6e9c914fa9ca8c779129fed, type: 3}
-  m_Name: Skill_Temp_Guard
+  m_Name: Skill_Temp_BuffArmor
   m_EditorClassIdentifier: 
   skill:
-    baseName: Guard
+    baseName: Slash
     baseIcon: {fileID: 0}
-    joystick: 0
-    cd: 0
+    cooldown: 0
+    skillSlot: 1
+    sKillType: 1
+    castType: 0
+    activationType: 0
+    commitment: 0
+    source:
+      source: {fileID: 11400000, guid: b471abe9ffaee9b468bee2fb2dc244dd, type: 2}
+      amount: 20

@@ -2,45 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Skill_", menuName = "Data/RPG/Skill", order = 3)]
+[CreateAssetMenu(fileName = "Skill_", menuName = "Data/Skill/Skill", order = 0)]
 public class SkillSO : ScriptableObject
 {
-    public Skill skill;
+    public SkillInstance skill;
 }
 
 [System.Serializable]
-public class Skill
+public class SkillInstance : SkillBase
 {
     //Metadata (name desc, sprite)
     //verb = damage / heal / damage overtime 
     //Targetting 
     //UI
 
-    #region Properties
     public string baseName;
+    //desc.
     public Sprite baseIcon;
-    public bool joystick;
+    
     public float cooldown;
-    public float targetingRadius;
+    
+    //string animKey
+    //public float targetingRadius;
+    
+    public enum SkillSlot { ATTACK, SPECIAL, MAGIC};
+    public SkillSlot skillSlot; 
+    public enum SKillType { ACTIVE, PASSIVE};
+    public SKillType sKillType;
+    public enum CastType { INSTANT, CHARGED, CHANNELED};
+    public CastType castType;
+    public enum ActivationType { OnSurface, Ranged, OnActor, OnActorSelf, Melee };
+    public ActivationType activationType;
 
-    #endregion
+    [Range(0.0f, 1.0f)]
+    public float commitment; 
 
-
-    #region Go or components
-    #endregion
-
-    #region Variables
-    #endregion
-
-    #region Methods
-
-    public void UseSkill()
+    [System.Serializable]
+    public struct SourceWrapper
     {
-
+        public SourceSO source;
+        public Vector2 amount;
     }
 
-
-    #endregion
+    public SourceWrapper source;
 }
 
 //skillVerbSO
