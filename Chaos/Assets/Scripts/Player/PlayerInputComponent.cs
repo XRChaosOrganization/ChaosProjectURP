@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Alex : PlayerInputComponent 
-public class PlayerInput : MonoBehaviour
+
+public class PlayerInputComponent : MonoBehaviour
 {
 
     #region Go or components
 
-    private CharacterController2D cc;
+    private CharacterControllerComponent cc;
     [SerializeField] private Joystick joystick;
 
 
@@ -39,7 +39,7 @@ public class PlayerInput : MonoBehaviour
     #region Unity loop
     void Awake()
     {
-        cc = GetComponent<CharacterController2D>();
+        cc = GetComponent<CharacterControllerComponent>();
     }
 
     void Start()

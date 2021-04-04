@@ -17,13 +17,13 @@ public class SkillInstance : SkillBase
     //UI
 
     public string baseName;
-    //desc.
+    public string desc;
     public Sprite baseIcon;
     
     public float cooldown;
-    
-    //string animKey
-    //public float targetingRadius;
+
+    public string animKey;
+    public float targetingRadius;
     
     public enum SkillSlot { ATTACK, SPECIAL, MAGIC};
     public SkillSlot skillSlot; 

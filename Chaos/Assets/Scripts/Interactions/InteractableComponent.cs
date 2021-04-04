@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class InteractableComponent : MonoBehaviour
 {
 
     #region Go or components

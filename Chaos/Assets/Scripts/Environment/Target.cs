@@ -18,12 +18,12 @@ public class Target : MonoBehaviour
 
     private void OnEnable()
     {
-        ButtonBehavior.ClearTargets += TargetOff;
+        //ButtonBehavior.ClearTargets += TargetOff;
     }
 
     private void OnDisable()
     {
-        ButtonBehavior.ClearTargets -= TargetOff;
+        //ButtonBehavior.ClearTargets -= TargetOff;
     }
 
     #endregion

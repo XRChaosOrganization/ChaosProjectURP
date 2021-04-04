@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Alex : ButtonBehaviorComponent?
 public class SkillInputComponent : MonoBehaviour
 {
     public delegate void Event();
@@ -20,17 +19,25 @@ public class SkillInputComponent : MonoBehaviour
     public void Init(SkillSO _skill)
     {
         skill = _skill;
-        if(skill.skill.castType == SkillInstance.CastType.INSTANT)
+
+        if (skill.skill.activationType == SkillInstance.ActivationType.OnActorSelf || skill.skill.activationType == SkillInstance.ActivationType.Melee)
         {
             joystick.gameObject.SetActive(false);
             button.gameObject.SetActive(true);
+        } else
+        {
+            joystick.gameObject.SetActive(true);
+            button.gameObject.SetActive(false);
         }
-        //if sur le activationtype 
-        //On Surface -> JOYSTICK(AOE)
-        //Ranged -> JOYSTICK
-        //On Actor->JOYSTICK 
-        // OnActor.Self -> BUTTON
-        //Melee->BUTTON
+
+
+        // Ben : Instant can be set on joystick too, they activate on joystick release
+        //if(skill.skill.castType == SkillInstance.CastType.INSTANT)
+        //{
+        //    joystick.gameObject.SetActive(false);
+        //    button.gameObject.SetActive(true);
+        //}
+
     }
 
     void Update()
@@ -40,35 +47,7 @@ public class SkillInputComponent : MonoBehaviour
 
     private void UpdateSkillUse()
     {
-       //if (linkedSkill != null)
-       //{
-       //    Vector3 direction = new Vector2(joystick.Horizontal, joystick.Vertical);
-       //    //RaycastHit2D hit = Physics2D.CircleCast(player.targetingOrigin.position, circlecastRadius, direction, linkedSkill.skill.targetingRadius, targetLayer);
-       //
-       //    if(direction == Vector3.zero) return; 
-       //    
-       //    RaycastHit2D hit = Physics2D.Raycast(player.targetingOrigin.position, direction, linkedSkill.skill.targetingRadius, targetLayer);
-       //    if (hit)
-       //    {
-       //        Target target = hit.collider.gameObject.GetComponentInChildren<Target>();
-       //
-       //        if (target != lastTarget)
-       //        {
-       //            
-       //            if(ClearTargets != null)
-       //                ClearTargets();
-       //            lastTarget = target;
-       //            target.TargetOn();
-       //
-       //        }
-       //    }
-       //    else if (lastTarget != null)
-       //    {
-       //        lastTarget = null;
-       //        if (ClearTargets != null)
-       //            ClearTargets();
-       //    }
-       //}
+
     }
 
     public void OnInputDown ()

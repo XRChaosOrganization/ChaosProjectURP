@@ -17,8 +17,8 @@ public class SkillComponent : MonoBehaviour
     void Awake()
     {
         attackSlotInput = GameObject.Find("Action Button 1").GetComponent<SkillInputComponent>();
-        //specialSlotInput = gameobj.find("');
-        //magicSlotInput = gameobj.find("');
+        specialSlotInput = GameObject.Find("Action Button 2").GetComponent<SkillInputComponent>();
+        magicSlotInput = GameObject.Find("Action Button 3").GetComponent<SkillInputComponent>();
         EquipSkill(skillAttackSlot);
     }
 
@@ -35,10 +35,13 @@ public class SkillComponent : MonoBehaviour
                 attackSlotInput.Init(_skill);
                 break;
             case SkillInstance.SkillSlot.SPECIAL:
+                specialSlotInput.Init(_skill);
                 break;
             case SkillInstance.SkillSlot.MAGIC:
+                magicSlotInput.Init(_skill);
                 break;
             default:
+                Debug.LogWarning("SkillSlot Missing !");
                 break;
         }
     }
